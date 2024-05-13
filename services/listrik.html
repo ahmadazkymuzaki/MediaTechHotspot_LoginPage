@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Pondenet">
+    <meta name="keywords" content="Pondenet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="" id="themeColor" />
+    <title id="title"></title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="" id="favicon">
+    <!-- Bootstrap CSS -->
+    <link href="/static/plugin/bs-5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- General CSS -->
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+
+<body>
+    <div class="app-wrap">
+        <div class="content">
+            <section class="pulsa pb-10">
+                <div class="container-xl px-4">
+                    <a href="../status.html" class="text-white text-decoration-none shadow-none">
+                        <button type="button" class="btn btn-outline-light text-white shadow-none ripple">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </section>
+
+            <section class="card-pulsa">
+                <div class="container px-4 mt-n11">
+                    <div class="row">
+                        <div class="col-12 mt-4">
+                            <div class="card-label card mb-4">
+                                <div class="card-body">
+                                    <div class="title-pulsa">
+                                        <span>Listrik pintar</span>
+                                        <h5>Listrik</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-item">
+                        <h5>Mau isi token berapa?</h5>
+                        <p>Pilih jumlah Token listrik yang anda inginkan</p>
+                    </div>
+                    <div class="row" id="itemCards">
+                        <!-- Data -->
+                    </div>
+                    <!-- Details items -->
+                    <div class="modal fade" id="listrikDetailsModal" tabindex="-1"
+                        aria-labelledby="listrikDetailsModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Transaction</h5>
+                                    <button type="button" class="btn-close ripple shadow-none" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="orderForm" action="#" method="post" class="needs-validation" novalidate>
+                                        <div class="head-instruction mb-4 mt-2 p-2">
+                                            Note: <br>
+                                            <small class="fw-light text-secondary"><span
+                                                    id="noteUserOrder"></span></small>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <input type="text" name="#" id="orderUser" class="form-control"
+                                                placeholder="Name" required>
+                                            <div class="invalid-feedback">
+                                                Please enter your name!
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-4">
+                                            <input type="number" name="#" id="noMeter" class="form-control"
+                                                placeholder="No Meter / ID Customer" required>
+                                            <div class="invalid-feedback">
+                                                Please enter your no meter!
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-4">
+                                            <label class="label-form mb-3 fw-bold">Select type</label>
+                                            <!-- Prabayar -->
+                                            <div class="box mb-2 js-check">
+                                                <label class="form-check">
+                                                    <input type="radio" name="listrikType" class="form-check-input"
+                                                        value="Prabayar" required>
+                                                    <div class="form-check-label">Prabayar </div>
+                                                </label>
+                                            </div>
+                                            <!-- Pascabayar -->
+                                            <div class="box js-check">
+                                                <label class="form-check">
+                                                    <input type="radio" name="listrikType" class="form-check-input"
+                                                        value="Pascabayar" required>
+                                                    <div class="form-check-label">Pascabayar</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- <h3 class="price mb-4 text-center"><small>Rp</small> 22.000</h3> -->
+                                        <h3 class="price mb-4 mt-4 text-center"><span id="listrikPrice"></span></h3>
+                                        <input type="hidden" id="listrikId">
+                                        <button type="submit" class="btn btn-primary d-block ripple w-100"
+                                            id="orderButton">Order
+                                            now</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Library JS -->
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/plugin/appear/jquery.appear.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/static/plugin/bs-5/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/plugin/bs-5/js/bootstrap.js"></script>
+    <!-- General JS -->
+    <script src="/static/js/setup-data/listrik-st.js"></script>
+    <script src="/static/js/app.js"></script>
+
+</body>
+
+</html>

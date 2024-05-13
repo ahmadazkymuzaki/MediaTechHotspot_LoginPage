@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="2; url=status.html">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta name="theme-color" content="" id="themeColor" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="" id="favicon">
+    <!-- Bootstrap CSS -->
+    <link href="/static/plugin/bs-5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- General CSS -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <title id="title"></title> <!-- Bootstrap -->
+    <script language="JavaScript">
+        function startClock() {
+          if (popup == 'true') {
+            window.open('$(link-status)', 'hotspot_status', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=290');
+          }
+          location.href = "status.html"; // Tambahkan protokol "http://" sebelum URL jika diperlukan
+        }
+        </script>
+</head>
+
+<body onLoad="startClock()">
+
+    <div class="container text-center">
+        <div class="center-body">
+            <div class="loader-circle-44">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+                <div class="bar-4"></div>
+                <div class="bar-5"></div>
+                <div class="bar-6"></div>
+                <div class="bar-7"></div>
+                <div class="bar-8"></div>
+                <div class="bar-9"></div>
+                <div class="bar-10"></div>
+                <div class="bar-11"></div>
+                <div class="bar-12"></div>
+                <div class="bar-13"></div>
+                <div class="bar-14"></div>
+                <div class="bar-15"></div>
+                <div class="bar-16"></div>
+            </div>
+            <div class="text-loader mt-5 pt-5">
+                <h4>Login anda berhasil!</h4>
+                <small>Jika halaman status tidak muncul klik <a href="status.html">disini</a></small>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

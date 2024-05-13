@@ -1,0 +1,188 @@
+{
+    "foods": [
+        {
+            "id": 1,
+            "thumbnail": "https://images.unsplash.com/photo-1626074353765-517a681e40be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+            "name": "Chicken Gosong",
+            "category": "Lunch",
+            "price": "25.000",
+            "description": "This is chicken gosong"
+        },
+        {
+            "id": 2,
+            "thumbnail": "https://images.unsplash.com/photo-1627053947279-3af797c5c05f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80",
+            "name": "Frichicken",
+            "category": "Snack",
+            "price": "40.000",
+            "description": "This is frichicken"
+        },
+        {
+            "id": 3,
+            "thumbnail": "https://images.unsplash.com/photo-1611270629569-8b357cb88da9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+            "name": "Pasta",
+            "category": "Dinner",
+            "price": "20.000",
+            "description": "This is pasta"
+        },
+        {
+            "id": 4,
+            "thumbnail": "https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80",
+            "name": "Steak Wagyu A5",
+            "category": "Dinner",
+            "price": "2.000.000",
+            "description": "This is steak wagyu premium "
+        },
+        {
+            "id": 5,
+            "thumbnail": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80",
+            "name": "Biscuits ",
+            "category": "Snack",
+            "price": "10.000",
+            "description": "This is Biscuits "
+        },
+        {
+            "id": 6,
+            "thumbnail": "https://images.unsplash.com/photo-1584970922591-5b91e5f927a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+            "name": "atmeal",
+            "category": "Breakfast",
+            "price": "15.000",
+            "description": "This is oatmeal food"
+        },
+        {
+            "id": 7,
+            "thumbnail": "https://images.unsplash.com/photo-1581771556488-da02d801966c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+            "name": "Toast",
+            "category": "Breakfast",
+            "price": "10.000",
+            "description": "This is toast food"
+        },
+        {
+            "id": 8,
+            "thumbnail": "https://images.unsplash.com/photo-1598233846284-b0062fb101bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=725&q=80",
+            "name": "Butter cake",
+            "category": "Cake",
+            "price": "450.000",
+            "description": "This is Butter cake"
+        },
+        {
+            "id": 9,
+            "thumbnail": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+            "name": "Pound cake",
+            "category": "Cake",
+            "price": "20.000",
+            "description": "This is pound cake"
+        },
+        {
+            "id": 10,
+            "thumbnail": "https://images.unsplash.com/photo-1611671310207-2374ec7b1889?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+            "name": "Burritos",
+            "category": "Lunch",
+            "price": "25.000",
+            "description": "This is burritos food"
+        },
+        {
+            "id": 11,
+            "thumbnail": "https://images.unsplash.com/photo-1613844237701-8f3664fc2eff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
+            "name": "Soups",
+            "category": "Lunch",
+            "price": "18.000",
+            "description": "This is soups food"
+        },
+        {
+            "id": 12,
+            "thumbnail": "https://images.unsplash.com/photo-1628585352636-f4a24c2e17d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
+            "name": "Magnum ",
+            "category": "Ice cream",
+            "price": "5.000",
+            "description": "This is magnum ice cream"
+        },
+        {
+            "id": 13,
+            "thumbnail": "https://images.unsplash.com/photo-1534173751091-95c4b3108237?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+            "name": "Gelato Fiasco",
+            "category": "Ice cream",
+            "price": "10.000",
+            "description": "This is Gelato Fiasco ice cream"
+        },
+        {
+            "id": 14,
+            "thumbnail": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+            "name": "Salmon with lemon",
+            "category": "Dinner",
+            "price": "100.000",
+            "description": "This is salmon with lemon food"
+        },
+        {
+            "id": 15,
+            "thumbnail": "https://images.unsplash.com/photo-1614119068601-483274e9dcb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=406&q=80",
+            "name": "BBQ",
+            "category": "Dinner",
+            "price": "250.000",
+            "description": "This is BBQ for party package"
+        },
+        {
+            "id": 16,
+            "thumbnail": "https://images.unsplash.com/photo-1560847468-5eef330f455a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+            "name": "Mineral water Alqis",
+            "category": "Mineral water",
+            "price": "10.000",
+            "description": "This is alqis mineral water premium"
+        },
+        {
+            "id": 17,
+            "thumbnail": "https://images.unsplash.com/photo-1626810370306-14190f188ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
+            "name": "Mineragua ",
+            "category": "Mineral water",
+            "price": "18.000",
+            "description": "This is mineral water "
+        },
+        {
+            "id": 18,
+            "thumbnail": "https://images.unsplash.com/photo-1633941012017-d5d8a24e8306?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+            "name": "Coffy Cup with milk cream",
+            "category": "Coffe",
+            "price": "15.000",
+            "description": "This is coffe cup premium"
+        },
+        {
+            "id": 19,
+            "thumbnail": "https://images.unsplash.com/photo-1565252556328-92ee4a9a0983?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+            "name": "Capuchino",
+            "category": "Coffe",
+            "price": "28.000",
+            "description": "This is coffe Capuchino"
+        },
+        {
+            "id": 20,
+            "thumbnail": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+            "name": "Orange juice",
+            "category": "Juice",
+            "price": "10.000",
+            "description": "This is orange juice"
+        },
+        {
+            "id": 21,
+            "thumbnail": "https://images.unsplash.com/flagged/photo-1557753478-b9fb74f39eb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=386&q=80",
+            "name": "Avocado juice",
+            "category": "Juice",
+            "price": "18.000",
+            "description": "This is avocado juice"
+        },
+        {
+            "id": 22,
+            "thumbnail": "https://images.unsplash.com/photo-1550634487-24e377301911?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
+            "name": "Coca cola",
+            "category": "Soda",
+            "price": "10.000",
+            "description": "This is coca cola drink soda"
+        },
+        {
+            "id": 23,
+            "thumbnail": "https://images.unsplash.com/photo-1625860446399-4b1db39d2834?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=364&q=80",
+            "name": "Jaritos ",
+            "category": "Soda",
+            "price": "11.000",
+            "description": "This is jaritos drink soda"
+        }
+    ]
+}

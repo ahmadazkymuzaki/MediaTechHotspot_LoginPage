@@ -1,0 +1,23 @@
+<svg width="190" height="177" viewBox="0 0 190 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_717_66)">
+<path d="M98 -15H49V85L98 -15Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+<path d="M49 -15L0 85V-15H49Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+<path d="M0 85L49 185H0V85Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+<path d="M98 185L49 85H98V185Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+<path d="M196 -15L171.5 35H196V-15Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+<path d="M147 35H171.5V-15L147 35Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+<path d="M147 35V85L171.5 35H147Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+<path d="M196 35H171.5V85L196 35Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+<path d="M98 -15L147 85H98V-15Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+<path d="M147 85H122.5V135L147 85Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+<path d="M122.5 135V85H98L122.5 135Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+<path d="M122.5 185H98V135L122.5 185Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+<path d="M122.5 135H147V185L122.5 135Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+<path d="M196 85H147V185L196 85Z" stroke="white" stroke-opacity="0.29" stroke-width="2" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_717_66">
+<rect width="190" height="177" fill="white"/>
+</clipPath>
+</defs>
+</svg>

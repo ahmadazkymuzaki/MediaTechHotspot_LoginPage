@@ -1,0 +1,46 @@
+{
+    "voucher": [
+      {
+        "id": 1,
+        "limit": "1 Jam",
+        "devices": "1",
+        "data": "Unlimited",
+        "total": "2.000"
+      },
+      {
+        "id": 2,
+        "limit": "5 Jam",
+        "devices": "1",
+        "data": "Unlimited",
+        "total": "4.000"
+      },
+      {
+        "id": 3,
+        "limit": "12 Jam",
+        "devices": "1",
+        "data": "Unlimited",
+        "total": "8.000"
+      },
+      {
+        "id": 4,
+        "limit": "1 Hari",
+        "devices": "1",
+        "data": "Unlimited",
+        "total": "10.000"
+      },
+      {
+        "id": 5,
+        "limit": "7 Hari",
+        "devices": "1",
+        "data": "Unlimited",
+        "total": "30.000"
+      },
+      {
+        "id": 6,
+        "limit": "30 Hari",
+        "devices": "1",
+        "data": "Unlimited",
+        "total": "75.000"
+      }
+    ]
+  }

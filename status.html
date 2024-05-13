@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Pondenet">
+    <meta name="keywords" content="Pondenet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="" id="themeColor" />
+    <title id="title"></title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="" id="favicon">
+    $(if refresh-timeout)
+    <meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+    $(endif)
+    <!-- Bootstrap CSS -->
+    <link href="static/plugin/bs-5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- General CSS -->
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/widget-whatsapp.css">
+</head>
+
+<body>
+    <div class="app-wrap">
+        <div class="content">
+            <!-- 📌 Status Section -->
+            <div class="sticky-top">
+                <section class="status pb-5">
+                    <div class="container-xl px-4">
+                        <div class="row align-items-center justify-content-between text-white">
+                            <div class="col-12 text-center">
+                                <div class="avatar">
+                                    <img src="/static/img/status-page/avatar/avatar-man.png" alt="avatar"
+                                        class="rounded-pill">
+                                </div>
+                                <h6 class="page-header-title">$(username)</h6>
+                                <div class="status-user">
+                                    <div class="online"></div>Terhubung
+                                    $(if session-time-left)
+
+                                    $(uptime) / $(session-time-left)
+
+                                    $(else)
+
+                                    $(uptime)
+
+                                    $(endif)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="services px-4 mt-n10">
+                    <div class="row text-center bg-icon pt-1">
+                        <div class="col-3 col-sm-3 icon-item">
+                            <a href="/services/pulsa.html">
+                                <div class="mb-2">
+                                    <div class="d-inline-flex align-items-center justify-content-center ripple"
+                                        style="width: 65px; height: 65px;">
+                                        <img src="static/img/status-page/icon/icon-tlp.svg" alt="icons" class="icon">
+                                    </div>
+                                </div>
+                            </a>
+                            <small>Pulsa</small>
+                        </div>
+                        <div class="col-3 col-sm-3 icon-item">
+                            <a href="/services/listrik.html">
+                                <div class="mb-2">
+                                    <div class="d-inline-flex align-items-center justify-content-center ripple"
+                                        style="width: 65px; height: 65px;">
+                                        <img src="static/img/status-page/icon/icon-electric.svg" alt="icons"
+                                            class="icon">
+                                    </div>
+                                </div>
+                            </a>
+                            <small>Listrik</small>
+                        </div>
+                        <div class="col-3 col-sm-3 icon-item">
+                            <a href="/services/voucher.html">
+                                <div class="mb-2">
+                                    <div class="d-inline-flex align-items-center justify-content-center ripple"
+                                        style="width: 65px; height: 65px;">
+                                        <img src="static/img/status-page/icon/icon-voucher.svg" alt="icons"
+                                            class="icon">
+                                    </div>
+                                </div>
+                            </a>
+                            <small>Voucher</small>
+                        </div>
+                        <div class="col-3 col-sm-3 mb-3 icon-item">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#transactionBackdrop">
+                                <div class="mb-2">
+                                    <div class="d-inline-flex align-items-center justify-content-center ripple"
+                                        style="width: 65px; height: 65px;">
+                                        <img src="static/img/status-page/icon/icon-lainnya.svg" alt="icons"
+                                            class="icon">
+                                    </div>
+                                </div>
+                            </a>
+                            <small>Lainnya</small>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Modal Transaction -->
+            <div class="modal fade text-center" id="transactionBackdrop" data-bs-backdrop="transaction"
+                data-bs-keyboard="false" tabindex="-1" aria-labelledby="transactionBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content modal-info-list ">
+                        <div class="modal-header border-0">
+                            <button type="button" class="btn-close shadow-none ripple" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-3 col-sm-3 mb-3 icon-item">
+                                    <a href="/services/pulsa.html">
+                                        <div class="mb-2">
+                                            <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                style="width: 65px; height: 65px;">
+                                                <img src="static/img/status-page/icon/icon-tlp.svg" alt="icons"
+                                                    class="icon">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <small>Pulsa</small>
+                                </div>
+                                <div class="col-3 col-sm-3 mb-3 icon-item">
+                                    <a href="/services/listrik.html">
+                                        <div class="mb-2">
+                                            <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                style="width: 65px; height: 65px;">
+                                                <img src="static/img/status-page/icon/icon-electric.svg" alt="icons"
+                                                    class="icon">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <small>Listrik</small>
+                                </div>
+                                <div class="col-3 col-sm-3 mb-3 icon-item">
+                                    <a href="/services/voucher.html">
+                                        <div class="mb-2">
+                                            <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                style="width: 65px; height: 65px;">
+                                                <img src="static/img/status-page/icon/icon-voucher.svg" alt="icons"
+                                                    class="icon">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <small>Voucher</small>
+                                </div>
+                                <div class="col-3 col-sm-3 mb-3 icon-item">
+                                    <a href="/services/speed.html">
+                                        <div class="mb-2">
+                                            <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                style="width: 65px; height: 65px;">
+                                                <img src="static/img/status-page/icon/icon-speed.svg" alt="icons"
+                                                    class="icon">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <small>Speed</small>
+                                </div>
+                                <div class="col-3 col-sm-3 mb-3 icon-item">
+                                    <a href="/services/info.html">
+                                        <div class="mb-2">
+                                            <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                style="width: 65px; height: 65px;">
+                                                <img src="static/img/status-page/icon/icon-info.svg" alt="icons"
+                                                    class="icon">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <small>Info</small>
+                                </div>
+                                <div class="col-3 col-sm-3 mb-3 icon-item">
+                                    <a href="/services/topup.html">
+                                        <div class="mb-2">
+                                            <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                style="width: 65px; height: 65px;">
+                                                <img src="static/img/status-page/icon/icon-topup.svg" alt="icons"
+                                                    class="icon">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <small>Topup</small>
+                                </div>
+                                <div class="col-3 col-sm-3 mb-3 icon-item">
+                                    <a href="/food/index.html">
+                                        <div class="mb-2">
+                                            <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                style="width: 65px; height: 65px;">
+                                                <img src="static/img/status-page/icon/icon-food.svg" alt="icons"
+                                                    class="icon">
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <small>Food</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 📌Overview Section -->
+            <section class="overview px-4">
+                <div class="row">
+                    <div class="col-12 col-sm-12 mb-3">
+                        <h4 class="title">Overview</h4>
+                        <div class="card text-center mt-4">
+                            <div class="row card-body">
+                                <div class="col-6">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-icon-overview-down rounded-pill"
+                                        style="width: 44px; height: 44px;">
+                                        <img src="/static/img/status-page/icon/arrow-down.svg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h3>$(bytes-out-nice)</h3>
+                                        <span>Download Mbps</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-icon-overview-up rounded-pill"
+                                        style="width: 44px; height: 44px;">
+                                        <img src="/static/img/status-page/icon/arrow-up.svg" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <h3>$(bytes-in-nice)</h3>
+                                        <span>Upload Mbps</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 mb-3 mt-4">
+                        <h4 class="title">Info connection</h4>
+                        <div class="card mt-4">
+                            <div class="row card-body">
+                                <div class="col-12 d-flex mb-4">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-icon-ip rounded-pill"
+                                        style="width: 50px; height: 50px;">
+                                        <img src="/static/img/status-page/icon/ip-address-icon.svg" alt="icon">
+                                    </div>
+                                    <div class="text-detail ps-3">
+                                        <h6>IP Address</h6>
+                                        <span>$(ip)</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex mb-4">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-icon-mac rounded-pill"
+                                        style="width: 50px; height: 50px;">
+                                        <img src="/static/img/status-page/icon/mac-address.svg" alt="icon">
+                                    </div>
+                                    <div class="text-detail ps-3">
+                                        <h6>MAC Address</h6>
+                                        <span>$(mac)</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex mb-4">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-icon-kuota rounded-pill"
+                                        style="width: 50px; height: 50px;">
+                                        <img src="/static/img/status-page/icon/kuota.svg" alt="icon">
+                                    </div>
+                                    <div class="text-detail ps-3">
+                                        $(if limit-bytes-total)
+                                        <h6>Sisa Kuota</h6>
+                                        <span>$(if limit-bytes-total)
+                                            <script language=javascript>result = ($(limit - bytes - total) / 1000000).toFixed(2)
+                                                document.write(result)</script> MiB
+                                            $(endif)
+                                            $(if limit-bytes-total == '')Unlimited$(endif)
+                                        </span>
+                                        $(else)
+                                        <h6>Sisa Kuota</h6>
+                                        <span>$(if limit-bytes-out)
+                                            <script language=javascript>result = ($(limit - bytes - out) / 1000000).toFixed(2)
+                                                document.write(result)</script> MiB
+                                            $(endif)
+                                            $(if limit-bytes-out == '')Unlimited$(endif)
+                                        </span>
+                                        $(endif)
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="d-inline-flex align-items-center justify-content-center bg-icon-refresh rounded-pill"
+                                        style="width: 50px; height: 50px;">
+                                        <img src="/static/img/status-page/icon/refresh-ccw.svg" alt="icon">
+                                    </div>
+                                    <div class="text-detail ps-3">
+                                        $(if refresh-timeout)
+                                        <h6>Status refresh</h6>
+                                        <span>$(refresh-timeout)</span>
+                                        $(endif)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-outline-danger w-100 btn-block p-2 ripple mt-5"
+                            href="logout.html?erase-cookie=true">Logout</a>
+
+                        <div class="copy mt-4 text-center">
+                            <span>Powered by MediaTech | Hotspot</span>
+                            <p>V.1.0.0</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Live chat whatsApp -->
+            <div id='whatsapp-chat' class='hide'>
+                <div class='header-chat'>
+                    <div class='head-home'>
+                        <div class='info-avatar'>
+                            <img src='/static/img/status-page/avatar/avatar-man.png' />
+                        </div>
+                        <p><span class="whatsapp-name">MediaTech</span><br><small>Typically replies within an
+                                hour</small></p>
+
+                    </div>
+                    <div class='get-new hide'>
+                        <div id='get-label'></div>
+                        <div id='get-nama'></div>
+                    </div>
+                </div>
+                <div class='home-chat'>
+
+                </div>
+                <div class='start-chat'>
+                    <div pattern="/static/img/whatsapp-bg.png"
+                        class="WhatsappChat__Component-sc-1wqac52-0 whatsapp-chat-body">
+                        <div class="WhatsappChat__MessageContainer-sc-1wqac52-1 dAbFpq">
+                            <div style="opacity: 0;" class="WhatsappDots__Component-pks5bf-0 eJJEeC">
+                                <div class="WhatsappDots__ComponentInner-pks5bf-1 hFENyl">
+                                    <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotOne-pks5bf-3 ixsrax">
+                                    </div>
+                                    <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotTwo-pks5bf-4 dRvxoz">
+                                    </div>
+                                    <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotThree-pks5bf-5 kXBtNt">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="opacity: 1;" class="WhatsappChat__Message-sc-1wqac52-4 kAZgZq">
+                                <div class="WhatsappChat__Author-sc-1wqac52-3 bMIBDo">MediaTech</div>
+                                <div class="WhatsappChat__Text-sc-1wqac52-2 iSpIQi">Hi there 👋<br><br>How
+                                    can I
+                                    help you?</div>
+                                <div class="WhatsappChat__Time-sc-1wqac52-5 cqCDVm">1:40</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='blanter-msg'>
+                        <textarea id='chat-input' placeholder='Write a response' maxlength='120' row='1'
+                            class="h-25"></textarea>
+                        <a href='javascript:void;' id='send-it'>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+                <div id='get-number'></div><a class='close-chat' href='javascript:void'>×</a>
+            </div>
+            <a class='blantershow-chat' href='javascript:void' title='Show Chat'>
+                <svg width="20" viewBox="0 0 24 24">
+                    <defs />
+                    <path fill="#eceff1"
+                        d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z" />
+                    <path fill="#4caf50"
+                        d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z" />
+                    <path fill="#fafafa"
+                        d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" />
+                </svg>Live chat</a>
+            <!-- //Live chat whatsApp -->
+
+        </div>
+    </div>
+
+    <!-- Library JS -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="static/plugin/appear/jquery.appear.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="static/plugin/bs-5/js/bootstrap.bundle.min.js"></script>
+    <script src="static/plugin/bs-5/js/bootstrap.js"></script>
+    <!-- General JS -->
+    <script src="static/js/custom.js"></script>
+    <script src="static/js/widget-whatsapp.js"></script>
+    <script src="static/js/app.js"></script>
+
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+
+</body>
+
+</html>

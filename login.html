@@ -1,0 +1,471 @@
+﻿<!doctype html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Pondenet">
+    <meta name="keywords" content="Pondenet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="" id="themeColor" />
+    <title id="title"></title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="" id="favicon">
+    <!-- Bootstrap CSS -->
+    <link href="/static/plugin/bs-5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- General CSS -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="static/css/widget-whatsapp.css">
+</head>
+
+<body onload="voucher()" onclick="putar()">
+
+    $(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
+        <input type="hidden" name="username" />
+        <input type="hidden" name="password" />
+        <input type="hidden" name="dst" value="$(link-orig)" />
+        <input type="hidden" name="popup" value="true" />
+    </form>
+
+    <script src="/md5.js"></script>
+    <script>
+        function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
+            return false;
+        }
+
+    </script>
+    $(endif)
+
+    <div class="app-wrap">
+        <div class="content">
+            <!-- Changes your logo here 👇 -->
+            <div class="header">
+                <img src="static/img/status-page/logo-light.svg" alt="logo" class="logo" loading="lazy">
+            </div>
+            <section class="services container">
+                <div class="h4 fw-bold mb-4">Layanan</div>
+                <div class="row text-center">
+                    <div class="col-3 col-sm-3 mb-3 icon-item">
+                        <a href="no-internet.html">
+                            <div class="mb-2">
+                                <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                    style="width: 65px; height: 65px;">
+                                    <img src="static/img/status-page/icon/icon-tlp.svg" alt="icons" class="icon"
+                                        loading="lazy">
+                                </div>
+                            </div>
+                        </a>
+                        <small>Pulsa</small>
+                    </div>
+                    <div class="col-3 col-sm-3 mb-3 icon-item">
+                        <a href="no-internet.html">
+                            <div class="mb-2">
+                                <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                    style="width: 65px; height: 65px;">
+                                    <img src="static/img/status-page/icon/icon-electric.svg" alt="icons" class="icon"
+                                        loading="lazy">
+                                </div>
+                            </div>
+                        </a>
+                        <small>Listrik</small>
+                    </div>
+                    <div class="col-3 col-sm-3 mb-3 icon-item">
+                        <a href="no-internet.html">
+                            <div class="mb-2">
+                                <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                    style="width: 65px; height: 65px;">
+                                    <img src="static/img/status-page/icon/icon-voucher.svg" alt="icons" class="icon">
+                                </div>
+                            </div>
+                        </a>
+                        <small>Voucher</small>
+                    </div>
+                    <div class="col-3 col-sm-3 mb-3 icon-item">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#transactionBackdrop">
+                            <div class="mb-2">
+                                <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                    style="width: 65px; height: 65px;">
+                                    <img src="static/img/status-page/icon/icon-lainnya.svg" alt="icons" class="icon"
+                                        loading="lazy">
+                                </div>
+                            </div>
+                        </a>
+                        <small>Lainnya</small>
+                        <!-- Modal Transaction -->
+                        <div class="modal fade" id="transactionBackdrop" data-bs-backdrop="transaction"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="transactionBackdropLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content modal-info-list ">
+                                    <div class="modal-header border-0">
+                                        <button type="button" class="btn-close shadow-none ripple"
+                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-3 col-sm-3 mb-3 icon-item">
+                                                <a href="no-internet.html">
+                                                    <div class="mb-2">
+                                                        <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                            style="width: 65px; height: 65px;">
+                                                            <img src="static/img/status-page/icon/icon-tlp.svg"
+                                                                alt="icons" class="icon" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <small>Pulsa</small>
+                                            </div>
+                                            <div class="col-3 col-sm-3 mb-3 icon-item">
+                                                <a href="no-internet.html">
+                                                    <div class="mb-2">
+                                                        <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                            style="width: 65px; height: 65px;">
+                                                            <img src="static/img/status-page/icon/icon-electric.svg"
+                                                                alt="icons" class="icon" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <small>Listrik</small>
+                                            </div>
+                                            <div class="col-3 col-sm-3 mb-3 icon-item">
+                                                <a href="no-internet.html">
+                                                    <div class="mb-2">
+                                                        <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                            style="width: 65px; height: 65px;">
+                                                            <img src="static/img/status-page/icon/icon-voucher.svg"
+                                                                alt="icons" class="icon" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <small>Voucher</small>
+                                            </div>
+                                            <div class="col-3 col-sm-3 mb-3 icon-item">
+                                                <a href="no-internet.html">
+                                                    <div class="mb-2">
+                                                        <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                            style="width: 65px; height: 65px;">
+                                                            <img src="static/img/status-page/icon/icon-speed.svg"
+                                                                alt="icons" class="icon" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <small>Speed</small>
+                                            </div>
+                                            <div class="col-3 col-sm-3 mb-3 icon-item">
+                                                <a href="/services/info.html">
+                                                    <div class="mb-2">
+                                                        <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                            style="width: 65px; height: 65px;">
+                                                            <img src="static/img/status-page/icon/icon-info.svg"
+                                                                alt="icons" class="icon" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <small>Info</small>
+                                            </div>
+                                            <div class="col-3 col-sm-3 mb-3 icon-item">
+                                                <a href="no-internet.html">
+                                                    <div class="mb-2">
+                                                        <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                            style="width: 65px; height: 65px;">
+                                                            <img src="static/img/status-page/icon/icon-topup.svg"
+                                                                alt="icons" class="icon" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <small>Topup</small>
+                                            </div>
+                                            <div class="col-3 col-sm-3 mb-3 icon-item">
+                                                <a href="no-internet.html">
+                                                    <div class="mb-2">
+                                                        <div class="d-inline-flex align-items-center justify-content-center bg-icon ripple"
+                                                            style="width: 65px; height: 65px;">
+                                                            <img src="static/img/status-page/icon/icon-food.svg"
+                                                                alt="icons" class="icon" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <small>Food</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Buttom sheet -->
+                <div class="form-group mt-5">
+                    $(if error)
+                    <div class="alert alert-danger d-flex align-items-center" role="alert">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-icon-alert-danger rounded-pill"
+                            style="width: 24px; height: 24px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-x">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </div>
+                        <div class="ps-2 text-alert">
+                            $(error)
+                        </div>
+                    </div>
+                    $(endif)
+                </div>
+                <button class="btn btn-primary w-100 p-2 ripple open-offcanvas1">Login</button>
+                <div class="css-1hmirdk">
+                    <span class="css-1q1vbl7"></span>
+                    <span class="css-1t3w0g7">or</span>
+                    <span class="css-1q1vbl7"></span>
+                </div>
+                <button class="btn btn-outline-secondary w-100 p-2 ripple"
+                    onclick="window.location='https://qr.pondenet.com';">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 justify-content-center align-items-center vertical-align-center"
+                        style="width: 16px; height: 16px;">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                    </svg>
+                    Login with QR
+                </button>
+
+                <!-- for trial wifi -->
+                $(if trial)
+                <div class="links text-center mt-5 mb-5">
+                    Trial free wifi <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">here</a>
+                </div>
+
+                <div class="login offcanvas1">
+                    <div class="offcanvas-content1">
+                        <!-- Button Close -->
+                        <button class="close-offcanvas1 ripple ">
+                            <svg class="text-secondary" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                        <!-- Content of your offcanvas menu or login form goes here -->
+                        <section id="home">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <div class="header-form text-center mt-5">
+                                            <h4>Login sekarang</h4>
+                                            <p>Silahkan masukan kode voucher atau username member anda yang valid</p>
+                                        </div>
+
+                                        <div class="text-center justify-content-center align-items-center d-flex mb-4">
+                                            <div class="bg-tab rounded-4 p-1">
+                                                <!-- Test other tab -->
+                                                <a href='#target1' id='target1' class='target text-decoration-none'>
+                                                    <button id="btnvrc" class="btn btn-tab" onclick="voucher();">Kode
+                                                        Voucher</button>
+                                                </a>
+                                                <a href='#target2' id='target2' class='target text-decoration-none'>
+
+                                                    <button id="btnmem" class="btn btn-tab" onclick="member();">Member
+                                                        VIP</button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <form name="login" action="$(link-login-only)" method="post" $(if chap-id)
+                                            onSubmit="return doLogin()" $(endif)>
+                                            <input type="hidden" name="dst" value="$(link-orig)" />
+                                            <input type="hidden" name="popup" value="true" />
+
+                                            <div class="info" id="infologin"></div>
+                                            $(if error)
+                                            <div class="alert alert-danger d-flex align-items-center" role="alert">
+                                                <div class="d-inline-flex align-items-center justify-content-center bg-icon-alert-danger rounded-pill"
+                                                    style="width: 24px; height: 24px;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-x">
+                                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                    </svg>
+                                                </div>
+                                                <div class="ps-2 text-alert">
+                                                    $(error)
+                                                </div>
+                                            </div>
+                                            $(endif)
+
+                                            <div class="form-group mb-3">
+                                                <input name="username" type="text" value="$(username)"
+                                                    placeholder="Username" class="form-control" required />
+                                            </div>
+                                            <div class="form-group">
+                                                <input name="password" class="form-control" type="password"
+                                                    placeholder="Password" required />
+                                            </div>
+
+                                            <!-- <input type="submit" value="Connect" /> -->
+                                            <button type="submit" class="btn btn-primary w-100 mt-5 mb-5">Login</button>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Live chat whatsApp -->
+<div id='whatsapp-chat' class='hide'>
+    <div class='header-chat'>
+        <div class='head-home'>
+            <div class='info-avatar'>
+                <img src='/static/img/status-page/avatar/avatar-man.png' />
+            </div>
+            <p><span class="whatsapp-name">MediaTech</span><br><small>Typically replies within an
+                    hour</small></p>
+
+        </div>
+        <div class='get-new hide'>
+            <div id='get-label'></div>
+            <div id='get-nama'></div>
+        </div>
+    </div>
+    <div class='home-chat'>
+
+    </div>
+    <div class='start-chat'>
+        <div pattern="/static/img/whatsapp-bg.png"
+            class="WhatsappChat__Component-sc-1wqac52-0 whatsapp-chat-body">
+            <div class="WhatsappChat__MessageContainer-sc-1wqac52-1 dAbFpq">
+                <div style="opacity: 0;" class="WhatsappDots__Component-pks5bf-0 eJJEeC">
+                    <div class="WhatsappDots__ComponentInner-pks5bf-1 hFENyl">
+                        <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotOne-pks5bf-3 ixsrax">
+                        </div>
+                        <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotTwo-pks5bf-4 dRvxoz">
+                        </div>
+                        <div class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotThree-pks5bf-5 kXBtNt">
+                        </div>
+                    </div>
+                </div>
+                <div style="opacity: 1;" class="WhatsappChat__Message-sc-1wqac52-4 kAZgZq">
+                    <div class="WhatsappChat__Author-sc-1wqac52-3 bMIBDo">MediaTech</div>
+                    <div class="WhatsappChat__Text-sc-1wqac52-2 iSpIQi">Hi there 👋<br><br>How
+                        can I
+                        help you?</div>
+                    <div class="WhatsappChat__Time-sc-1wqac52-5 cqCDVm">1:40</div>
+                </div>
+            </div>
+        </div>
+
+        <div class='blanter-msg'>
+            <textarea id='chat-input' placeholder='Write a response' maxlength='120' row='1'
+                class="h-25"></textarea>
+            <a href='javascript:void;' id='send-it'>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                </svg>
+            </a>
+
+        </div>
+    </div>
+    <div id='get-number'></div><a class='close-chat' href='javascript:void'>×</a>
+</div>
+<a class='blantershow-chat' href='javascript:void' title='Show Chat'>
+    <svg width="20" viewBox="0 0 24 24">
+        <defs />
+        <path fill="#eceff1"
+            d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z" />
+        <path fill="#4caf50"
+            d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z" />
+        <path fill="#fafafa"
+            d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" />
+    </svg>Live chat</a>
+<!-- //Live chat whatsApp -->
+
+    </div>
+
+    <!-- Music Player Here -->
+    <audio src="static/audio/klik.mp3" id="my-music">
+    </audio>
+    <script type="text/javascript">
+        var hostname = window.location.hostname;
+        document.getElementById('title').innerHTML = hostname + " > login";
+
+        document.login.username.focus();
+
+        var infologin = document.getElementById('infologin');
+        infologin.innerHTML = "input your voucher code or password and then login";
+
+        // login page 2 
+        var username = document.login.username;
+        var password = document.login.password;
+
+        username.placeholder = "Kode Voucher";
+
+        // set password = username
+        function setpass() {
+            var user = username.value
+            //user = user.toLowerCase();
+            username.value = user;
+            password.value = user;
+        }
+
+        username.onkeyup = setpass;
+
+        // change to voucher mode
+        function voucher() {
+            username.focus();
+            username.onkeyup = setpass;
+            username.placeholder = "Kode Voucher";
+            password.type = "hidden";
+            infologin.innerHTML = "";
+            putar();
+        }
+
+        // change to member mode
+        function member() {
+            username.focus();
+            username.onkeyup = "";
+            username.placeholder = "Username";
+            password.type = "password";
+            infologin.innerHTML = "";
+            putar();
+        }
+        function putar() {
+            document.getElementById("my-music").play();
+        }
+    </script>
+    <!-- Library JS -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="static/plugin/appear/jquery.appear.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="static/plugin/bs-5/js/bootstrap.bundle.min.js"></script>
+    <script src="static/plugin/bs-5/js/bootstrap.js"></script>
+    <!-- General JS -->
+    <script src="static/js/app.js"></script>
+    <script src="static/js/custom.js"></script>
+    <script src="static/js/widget-whatsapp.js"></script>
+
+
+</body>
+
+</html>
